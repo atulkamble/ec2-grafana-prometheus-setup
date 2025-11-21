@@ -9,15 +9,15 @@ sudo yum install -y https://dl.grafana.com/grafana-enterprise/release/12.2.1/gra
 sudo systemctl start grafana-server
 sudo systemctl enable  grafana-server
 sudo systemctl status grafana-server
-
+```
 http://18.232.59.17:3000/
 
 >> admin,admin
 
 >> Admin@123
 
-// install prometheus 
-
+# install prometheus 
+```
 wget https://prometheus.io/download/3.7.3/2025-10-29/prometheus-3.7.3.linux-amd64.tar.gz
 
 sudo yum install collectd-write_prometheus.x86_64 -y
@@ -48,7 +48,7 @@ sudo chown prometheus:prometheus /usr/local/bin/prometheus
 sudo chown prometheus:prometheus /usr/local/bin/promtool
 ```
 
-# **Configure systemd Service**
+// Configure systemd Service
 
 Create the service file:
 
@@ -82,7 +82,7 @@ Save & exit.
 
 ---
 
-# **Start and Enable Prometheus**
+// Start and Enable Prometheus
 
 ```sh
 sudo systemctl daemon-reload
@@ -93,7 +93,7 @@ sudo systemctl status prometheus
 
 ---
 
-# **🔹 Access Prometheus UI**
+// Access Prometheus UI
 
 Open in browser:
 
