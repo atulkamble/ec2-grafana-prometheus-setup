@@ -7,6 +7,7 @@ t3.medium | SG-Inbound-3000 | 9090 | 9100
 
 sudo yum update -y
 sudo yum install wget tar -y
+sudo yum install make -y
 sudo yum install -y https://dl.grafana.com/grafana-enterprise/release/12.2.1/grafana-enterprise_12.2.1_18655849634_linux_amd64.rpm
 sudo systemctl start grafana-server
 sudo systemctl enable  grafana-server
