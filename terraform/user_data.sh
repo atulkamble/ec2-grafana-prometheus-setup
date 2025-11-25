@@ -3,7 +3,7 @@ set -e
 
 # Update system
 sudo yum update -y
-sudo yum install wget tar make -y
+sudo yum install wget tar make nano tree -y
 
 # Install Grafana
 sudo yum install -y https://dl.grafana.com/grafana-enterprise/release/12.2.1/grafana-enterprise_12.2.1_18655849634_linux_amd64.rpm
