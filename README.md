@@ -1,3 +1,13 @@
+```
+git clone https://github.com/atulkamble/ec2-grafana-prometheus-node-exporter.git
+cd ec2-grafana-prometheus-node-exporter/terraform
+
+terraform init
+terraform plan
+terraform apply -auto-approve
+```
+
+
 # Grafana Server
 Installation of grafana server 
 t3.medium | SG-Inbound | 3000 | 9090 | 9100
